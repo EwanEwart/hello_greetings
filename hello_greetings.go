@@ -1,7 +1,7 @@
+// In Go, code executed as an application must be in a main package.
 package main
 
-//  In Go, code executed as an application must be in a main package.
-
+// import packages
 import (
 	"fmt"
 
@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	// Get a greeting message and print it.
+	// Get a greeting by calling the greetings package’s Hello function.
 	message := greetings.Hello("Kate")
 	fmt.Println(message)
 }

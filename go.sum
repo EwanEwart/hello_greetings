@@ -1,4 +1,2 @@
 github.com/EwanEwart/greetings v0.0.0-20240721091616-19fc72fdd285 h1:dGi3+nEdk8xG82xq8KjICpryZ4laxN4xnkcGsT6uj68=
 github.com/EwanEwart/greetings v0.0.0-20240721091616-19fc72fdd285/go.mod h1:hlJsUeFNTdzPvOl7yPvO7bU7OkKs7yUitKAXFgWVBdI=
-golang.org/x/text v0.16.0 h1:a94ExnEXNtEwYLGJSIUxnWoxoRz/ZcCsV63ROupILh4=
-golang.org/x/text v0.16.0/go.mod h1:GhwF1Be+LQoKShO3cGOHzqOgRrGaYc9AvblQOmPVHnI=
