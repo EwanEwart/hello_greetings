@@ -18,11 +18,16 @@ func main() {
 	log.SetPrefix("greetings: ")
 	log.SetFlags(0)
 
-	// request a greetings message
-	// Assign both of the Hello return values, including the error, to variables
-	// Change the Hello argument from a specific name to an empty string, so you can try out the error-handling code.
-	// message, err := greetings.Hello("Kate")
-	message, err := greetings.Hello("")
+	/*
+		request a greetings message
+		Assign both of the Hello return values,
+		including the error, to variables
+		Change the Hello argument from a specific name
+		to an empty string,
+		so you can try out the error-handling code.
+	*/
+	message, err := greetings.Hello("Kate")
+	// message, err := greetings.Hello("")
 	/*
 		If an error was returned,
 		print it to the console and exit the program.
