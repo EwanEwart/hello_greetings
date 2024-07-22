@@ -11,6 +11,7 @@ import (
 )
 
 func main() {
+
 	/* Set properties of the predefined Logger,
 	including the "log entry prefix"
 	and a "flag" to disable printing the time, source file, and line number.
@@ -19,34 +20,29 @@ func main() {
 	log.SetFlags(0)
 
 	/*
-		request a greetings message
-		Assign both of the Hello return values,
-		including the error, to variables
-		Change the Hello argument from a specific name
-		to an empty string,
-		so you can try out the error-handling code.
+		Create a names variable as a slice type holding three names.
+
+		In your hello_greetings/hello_greetings.go calling code,
+		pass a slice of names,
+		then print the contents of the names/messages map you get back.
 	*/
-	message, err := greetings.Hello("Kate")
-	// message, err := greetings.Hello("")
+	// A slice of names
+	names := []string{"Mater", "Pater", "Filia", "Kitty"}
+
 	/*
-		If an error was returned,
-		print it to the console and exit the program.
-		Look for a non-nil error value. There's no sense continuing in this case.
+		Pass the names variable as the argument
+		to the Hellos function
+
+		Request greeting messages for the names.
 	*/
+	messages, err := greetings.Hellos(names)
 	if err != nil {
-		/*
-			Use the functions in the standard library's "log package"
-			to output error information.
-			If you receive an error,
-			you use "the log package's "Fatal" function"
-			to print the error and stop the program.
-		*/
 		log.Fatal(err)
 	}
 	/*
 		If no error was returned,
-		print the returned message on the console.
-		Get a greeting by calling the greetings package’s Hello function.
+		print the returned map of messages to the console.
 	*/
-	fmt.Println(message)
+	fmt.Println(messages)
+
 }
