@@ -43,6 +43,9 @@ func main() {
 		If no error was returned,
 		print the returned map of messages to the console.
 	*/
-	fmt.Println(messages)
+	// fmt.Println(messages)
+	for name, greeting := range messages {
+		fmt.Println(name, " -> ", greeting)
+	}
 
 }
